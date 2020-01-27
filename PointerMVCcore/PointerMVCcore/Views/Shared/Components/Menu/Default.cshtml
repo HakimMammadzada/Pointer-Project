@@ -1,0 +1,15 @@
+﻿@model IEnumerable<MenuModel>
+@{
+    Layout = null;
+}
+
+<nav class="site-navigation position-relative text-right" role="navigation">
+
+    <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+        @foreach (var menu in Model)
+        {
+        <li><a href="@menu.Href" class="nav-link">@menu.Name</a></li>
+        }
+        
+    </ul>
+</nav>

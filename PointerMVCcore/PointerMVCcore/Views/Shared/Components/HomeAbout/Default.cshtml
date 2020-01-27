@@ -1,0 +1,37 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+
+<div class="site-blocks-cover overlay" style="background-image: url(images/@Model[0].Image);" data-aos="fade" id="home-section">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+
+
+            <div class="col-md-6 mt-lg-5 text-center">
+                <h1>@Model[0].Title</h1>
+                <p class="mb-5">@Model[0].Describtion</p>
+                <div>
+                    <a href="#" class="btn btn-primary mr-2 mb-2">Get Started</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="site-section cta-big-image" id="about-section">
+    <div class="container">
+
+        <img src="images/@Model[1].Image" alt="Image" class="img-fluid">
+        <div class="img-box">
+            <span class="sub-title">Creative Skills</span>
+            <h2>@Model[1].Title</h2>
+            <p>@Model[1].Describtion</p>
+            <p><a href="#" class="btn btn-outline-dark">Read More</a></p>
+        </div>
+    </div>
+</div>
